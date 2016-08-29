@@ -1,0 +1,65 @@
+
+.nav a  {
+
+
+//  background: $nav-bg-color;
+  color: #FFF;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  &:hover, &:focus {
+
+    color: $nav-bg-color;
+
+  }
+
+}
+
+.navbar {
+
+  border: 0;
+
+
+}
+
+
+.collapse {
+
+  background: $nav-bg-color;
+
+}
+
+.navbar-header {
+
+  background: $nav-bg-color;
+
+
+}
+
+.navbar, .navbar a, .collapse, .navbar-header {
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+//.navbar.scrolled a,
+.navbar.scrolled,   {
+//  background: rgb(68, 68, 68); //IE
+  background: rgba(0, 0, 0, 0.075); //NON-IE
+
+  .collapse {
+
+    background: rgba(0, 0, 0, 0.075);
+
+  }
+
+  .navbar-header {
+
+    background: rgba(0, 0, 0, 0.075);
+
+  }
+
+}
+
