@@ -208,9 +208,8 @@ section {
 
 @media screen and (max-width: 992px) {
   .picture {
-    max-width: 50%;
-    margin-top: 40px;
-    margin-bottom: 40px; } }
+    margin: 40px 10px 40px 10px;
+    max-width: 50%; } }
 footer {
   background-color: #222;
   color: #fff; }
