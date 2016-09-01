@@ -17,24 +17,75 @@
 
 .navbar {
 
+
   border: 0;
 
+}
+
+/****/
+/*latest navbar changes*/
+/****/
+
+
+.navbar-default   {
+
+  background: rgba(0, 0, 0, .0);
+
+  .navbar-nav>li>a {
+
+    color: #FFF;
+
+    &:hover {
+
+      background-color: $nav-hover-color;
+      color:  $nav-color-2;
+
+    }
+
+    &:active, &:focus {
+
+      color: $overlay-color;
+    }
+
+  }
+
+  .navbar-collapse {
+
+
+    border: 0;
+
+
+  }
+
+
+  /*when the collapse button is toggled force nav options to the right -- inactive for now*/
+  .navbar-collapse.collapse.in {
+
+//   float: right !important;
+//   display: inline-block;
+
+  }
+
 
 }
 
 
-.collapse {
+.active a {
+
+
+  color: $nav-bg-color !important;
+
+}
+
+/****/
+
+
+.collapse, .navbar-header {
 
   background: $nav-bg-color;
 
 }
 
-.navbar-header {
-
-  background: $nav-bg-color;
-
-
-}
 
 .navbar, .navbar a, .collapse, .navbar-header {
   -webkit-transition: all 0.6s ease-out;
@@ -44,9 +95,9 @@
   transition: all 0.6s ease-out;
 }
 
-//.navbar.scrolled a,
+
 .navbar.scrolled,   {
-//  background: rgb(68, 68, 68); //IE
+
   background: rgba(0, 0, 0, 0.075); //NON-IE
 
   .collapse {
@@ -62,4 +113,43 @@
   }
 
 }
+
+@media screen and (max-width:$mobile) {
+
+
+  .collapse {
+
+    background: rgba(0,0,0, 0.35);
+
+  }
+
+  /*button starts as transparent, and doesn't hold coherence as you toggle and untoggle
+   -- it's not what i had intended */
+
+  button.navbar-toggle {
+
+    background-color: #222 !important;
+
+
+  }
+
+  button.navbar-toggle.collapsed, button.navbar-toggle.collapsed.scrolled {
+
+    background-color: rgba(0,0,0, .2) !important;
+
+  }
+
+  /**endfix**/
+
+
+
+
+
+
+
+
+
+
+}
+
 

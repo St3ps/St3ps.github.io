@@ -23,3 +23,40 @@ section {
 }
 
 }
+
+#about {
+
+
+  vertical-align: middle;
+
+  .row {
+
+    display: flex;
+    align-items: center;
+
+
+  }
+
+
+}
+
+@media screen and (max-width:$mobile) {
+
+  /*resume the about section into original properties -- otherwise the layout flow will be messy */
+  #about {
+
+    .row {
+
+      display: table;
+      align-items: inherit;
+
+
+    }
+
+
+  }
+
+
+
+
+}

@@ -47,6 +47,17 @@ section {
     padding-right: 0;
     padding-left: 0; }
 
+#about {
+  vertical-align: middle; }
+  #about .row {
+    display: flex;
+    align-items: center; }
+
+@media screen and (max-width: 768px) {
+  /*resume the about section into original properties -- otherwise the layout flow will be messy */
+  #about .row {
+    display: table;
+    align-items: inherit; } }
 .nav a {
   color: #FFF;
   font-weight: 800;
@@ -57,10 +68,27 @@ section {
 .navbar {
   border: 0; }
 
-.collapse {
-  background: #740504; }
+/****/
+/*latest navbar changes*/
+/****/
+.navbar-default {
+  background: transparent;
+  /*when the collapse button is toggled force nav options to the right -- inactive for now*/ }
+  .navbar-default .navbar-nav > li > a {
+    color: #FFF; }
+    .navbar-default .navbar-nav > li > a:hover {
+      background-color: #e7e7e7;
+      color: #E80C0F; }
+    .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+      color: #42b078; }
+  .navbar-default .navbar-collapse {
+    border: 0; }
 
-.navbar-header {
+.active a {
+  color: #740504 !important; }
+
+/****/
+.collapse, .navbar-header {
   background: #740504; }
 
 .navbar, .navbar a, .collapse, .navbar-header {
@@ -77,6 +105,19 @@ section {
   .navbar.scrolled .navbar-header {
     background: rgba(0, 0, 0, 0.075); }
 
+@media screen and (max-width: 768px) {
+  .collapse {
+    background: rgba(0, 0, 0, 0.35); }
+
+  /*button starts as transparent, and doesn't hold coherence as you toggle and untoggle
+   -- it's not what i had intended */
+  button.navbar-toggle {
+    background-color: #222 !important; }
+
+  button.navbar-toggle.collapsed, button.navbar-toggle.collapsed.scrolled {
+    background-color: rgba(0, 0, 0, 0.2) !important; }
+
+  /**endfix**/ }
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -149,24 +190,13 @@ section {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
 
-/**PLAN B**/
-/*
-.portfolio-img {
-
-  transition: transform .2s ease-in-out;
-  border: solid 1px red;
-
-  &:hover {
-
-
-    transform: scale(1.025);
-    box-shadow: 0 0 5px #000;
-
-  }
-
-}
-*/
-/*****/
+@media screen and (max-width: 768px) {
+  /*reduce size of portfolio thumbnails so they fit better mobile view*/
+  .thumb {
+    text-align: center;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; } }
 /*personal picture*/
 .picture {
   border-radius: 50%;
@@ -198,7 +228,6 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   footer h1 {
-    background: red;
     padding-bottom: 10%; } }
 @media screen and (min-width: 1200px) {
   footer .container {
