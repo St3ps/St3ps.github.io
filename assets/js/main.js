@@ -1,8 +1,9 @@
 console.log('main script loaded');
 
-$("li").click(function() {
+/*only top li is to be affected*/
+$("ul.navbar-nav li").click(function() {
 
-    $("li").removeClass("active");
+    $("ul.navbar-nav li").removeClass("active");
     $(this).addClass("active");
 
 });
