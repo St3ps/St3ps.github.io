@@ -190,6 +190,15 @@ section {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
 
+.mobile-link {
+  display: none; }
+
+@media screen and (max-width: 992px) {
+  .hovereffect > a {
+    display: none; }
+
+  .mobile-link {
+    display: inline-block; } }
 @media screen and (max-width: 768px) {
   /*reduce size of portfolio thumbnails so they fit better mobile view*/
   .thumb {

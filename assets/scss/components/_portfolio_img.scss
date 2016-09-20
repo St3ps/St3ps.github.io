@@ -107,6 +107,30 @@
 
 }
 
+.mobile-link {
+
+  display: none;
+
+
+}
+
+@media screen and (max-width: $tablet) {
+
+  .hovereffect > a {
+
+    display: none;
+
+  }
+
+  .mobile-link {
+
+    display: inline-block;
+
+  }
+
+
+
+}
 
 @media screen and (max-width: $mobile) {
 
@@ -121,6 +145,8 @@
 
 
   }
+
+
 
 
 
