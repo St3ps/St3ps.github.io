@@ -134,7 +134,7 @@ section {
     overflow: hidden;
     top: 0;
     left: 0;
-    padding: 50px 20px;
+    padding: 20px 20px;
     margin-bottom: 20px; }
   .hovereffect img {
     display: block;
@@ -184,21 +184,32 @@ section {
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); }
+  .hovereffect p {
+    margin-top: 1vh; }
+  .hovereffect a {
+    margin-top: 1vh; }
   .hovereffect:hover a, .hovereffect:hover p {
     opacity: 1;
     filter: alpha(opacity=100);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
-
-.mobile-link {
-  display: none; }
+  .hovereffect a:hover {
+    text-decoration: underline;
+    color: #37de16;
+    transition: color 0.35s, transform 0.35s; }
 
 @media screen and (max-width: 992px) {
-  .hovereffect > a {
-    display: none; }
-
-  .mobile-link {
-    display: inline-block; } }
+  /*  .hovereffect > a {
+  
+      display: none;
+  
+    }
+  
+    .mobile-link {
+  
+      display: inline-block;
+  
+    }*/ }
 @media screen and (max-width: 768px) {
   /*reduce size of portfolio thumbnails so they fit better mobile view*/
   .thumb {
