@@ -48,3 +48,10 @@ Temporary Items
 
 #webstorm
 .idea
+
+#unnecessary compressed files
+.zip
+
+#backupdirectories
+backup/
+
