@@ -103,7 +103,7 @@ section {
 .navbar.scrolled {
   background: rgba(0, 0, 0, 0.075); }
   .navbar.scrolled .collapse {
-    background: rgba(0, 0, 0, 0.075); }
+    background: rgba(0, 0, 0, 0.35); }
   .navbar.scrolled .navbar-header {
     background: rgba(0, 0, 0, 0.075); }
 
