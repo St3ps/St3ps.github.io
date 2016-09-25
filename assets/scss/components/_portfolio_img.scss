@@ -87,7 +87,7 @@
   }
 
   & a, & p {
-    color: #fff;
+    
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -97,14 +97,18 @@
   }
 
   & p {
-
+      
+    color: #fff;
     margin-top: 1vh;
 
   }
 
   & a {
-
+      
+    color: $portfolio-img-fa-icon-color;
+//    color: #ABB3ED;
     margin-top: 1vh;
+    transition: font-size 0.35s, transform 0.35s;
 
   }
 
@@ -122,9 +126,9 @@
   a:hover {
 
     text-decoration: underline;
-    color: rgb(55, 222, 22);
-//    color: $nav-color-2;
-    transition: color 0.35s, transform 0.35s;
+    color: rgba(255,255,255, 1);
+    font-size: 1.25em;
+    transition: font-size 0.35s, transform 0.35s;
 
 
 
