@@ -2,35 +2,34 @@ i {
   margin: 1rem; }
 
 h1 {
+  font-size: 5em; }
+
+h1, h2 {
   font-family: 'Lobster', cursive; }
 
-body, h3 {
+body, .overlay h2 {
   font-family: 'Raleway', sans-serif; }
 
 footer h3 {
   font-family: 'Lobster', cursive; }
 
 header {
-  height: 100vh;
+  position: relative;
+  height: 60vh;
   padding: 0;
-  width: 100%;
-  background-color: #1b6d85; }
+  width: 100%; }
 
 .img-container {
   height: 100%;
-  background-image: url("../../assets/img/mg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  z-index: 1; }
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=), linear-gradient(#1fb24b, rgba(31, 178, 75, 0.5)), url("../../assets/img/bg-gimp.png");
+  background-attachment: fixed, fixed, fixed;
+  background-size: 2px 2px, cover, cover; }
 
 .intro-message {
   position: absolute;
-  top: 25%;
-  left: 20%;
-  width: 60%;
-  right: 20%;
-  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
   color: white; }
 
@@ -64,8 +63,9 @@ section {
   color: #FFF;
   font-weight: 800;
   text-transform: uppercase; }
-  .nav a:hover, .nav a:focus {
-    color: #740504; }
+  .nav a:hover,
+  .nav a:focus {
+    color: #B20201; }
 
 .navbar {
   border: 0; }
@@ -81,42 +81,40 @@ section {
     .navbar-default .navbar-nav > li > a:hover {
       background-color: #e7e7e7;
       color: #E80C0F; }
-    .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+    .navbar-default .navbar-nav > li > a:active,
+    .navbar-default .navbar-nav > li > a:focus {
       color: #1FB24B; }
   .navbar-default .navbar-collapse {
     border: 0; }
 
 .active a {
-  color: #740504 !important; }
+  color: #B20201 !important; }
 
 /****/
-.collapse, .navbar-header {
-  background: #740504; }
+.collapse,
+.navbar-header {
+  background: #B20201; }
 
-.navbar, .navbar a, .collapse, .navbar-header {
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -o-transition: all 0.6s ease-out;
-  -ms-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out; }
+.navbar,
+.navbar a,
+.collapse,
+.navbar-header {
+  -webkit-transition: all 0.16s ease-out;
+  -moz-transition: all 0.16s ease-out;
+  -o-transition: all 0.16s ease-out;
+  -ms-transition: all 0.16s ease-out;
+  transition: all 0.16s ease-out; }
 
-.navbar.scrolled {
-  background: rgba(0, 0, 0, 0.075); }
-  .navbar.scrolled .collapse {
-    background: rgba(0, 0, 0, 0.35); }
-  .navbar.scrolled .navbar-header {
-    background: rgba(0, 0, 0, 0.075); }
+.scrolled .collapse,
+.scrolled .navbar-header {
+  background: rgba(178, 2, 1, 0.35); }
 
 @media screen and (max-width: 768px) {
   .collapse {
     background: rgba(0, 0, 0, 0.35); }
-  /*button starts as transparent, and doesn't hold coherence as you toggle and untoggle
-   -- it's not what i had intended */
-  button.navbar-toggle {
-    background-color: #222 !important; }
-  button.navbar-toggle.collapsed, button.navbar-toggle.collapsed.scrolled {
-    background-color: rgba(0, 0, 0, 0.2) !important; }
-  /**endfix**/ }
+  button.navbar-toggle.collapsed,
+  button.navbar-toggle.collapsed.scrolled {
+    background-color: rgba(0, 0, 0, 0.2) !important; } }
 
 .hovereffect {
   width: 100%;
@@ -196,7 +194,6 @@ section {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
   .hovereffect a:hover {
-    text-decoration: underline;
     color: white;
     font-size: 1.25em;
     transition: font-size 0.35s, transform 0.35s; }

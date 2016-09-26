@@ -1,155 +1,89 @@
-
-.nav a  {
-
-
-//  background: $nav-bg-color;
-  color: #FFF;
-  font-weight: 800;
-  text-transform: uppercase;
-
-  &:hover, &:focus {
-
-    color: $nav-bg-color;
-
-  }
-
+.nav a {
+    //  background: $nav-bg-color;
+    color: #FFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    &:hover,
+    &:focus {
+        color: $nav-bg-color;
+    }
 }
 
 .navbar {
-
-
-  border: 0;
-
-}
-
-/****/
-/*latest navbar changes*/
-/****/
-
-
-.navbar-default   {
-
-  background: rgba(0, 0, 0, .0);
-
-  .navbar-nav>li>a {
-
-    color: #FFF;
-
-    &:hover {
-
-      background-color: $nav-hover-color;
-      color:  $nav-color-2;
-
-    }
-
-    &:active, &:focus {
-
-      color: $overlay-color;
-    }
-
-  }
-
-  .navbar-collapse {
-
-
     border: 0;
-
-
-  }
-
-
-  /*when the collapse button is toggled force nav options to the right -- inactive for now*/
-  .navbar-collapse.collapse.in {
-
-//   float: right !important;
-//   display: inline-block;
-
-  }
-
-
 }
 
+
+/****/
+
+
+/*latest navbar changes*/
+
+
+/****/
+
+.navbar-default {
+    background: rgba(0, 0, 0, .0);
+    .navbar-nav>li>a {
+        color: #FFF;
+        &:hover {
+            background-color: $nav-hover-color;
+            color: $nav-color-2;
+        }
+        &:active,
+        &:focus {
+            color: $overlay-color;
+        }
+    }
+    .navbar-collapse {
+        border: 0;
+    }
+    /*when the collapse button is toggled force nav options to the right -- inactive for now*/
+    .navbar-collapse.collapse.in {
+        //   float: right !important;
+        //   display: inline-block;
+    }
+}
 
 .active a {
-
-
-  color: $nav-bg-color !important;
-
+    color: $nav-bg-color !important;
 }
+
 
 /****/
 
-
-.collapse, .navbar-header {
-
-  background: $nav-bg-color;
-
+.collapse,
+.navbar-header {
+    background: $nav-bg-color;
 }
 
-
-.navbar, .navbar a, .collapse, .navbar-header {
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -o-transition: all 0.6s ease-out;
-  -ms-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out;
+.navbar,
+.navbar a,
+.collapse,
+.navbar-header {
+    -webkit-transition: all 0.16s ease-out;
+    -moz-transition: all 0.16s ease-out;
+    -o-transition: all 0.16s ease-out;
+    -ms-transition: all 0.16s ease-out;
+    transition: all 0.16s ease-out;
 }
 
-
-.navbar.scrolled,   {
-
-  background: rgba(0, 0, 0, 0.075); //NON-IE
-
-  .collapse {
-
-    background: rgba(0, 0, 0, 0.35);
-
-  }
-
-  .navbar-header {
-
-    background: rgba(0, 0, 0, 0.075);
-
-  }
-
+.scrolled {
+    .collapse,
+    .navbar-header {
+        background: $nav-bg-color-rgba;
+    }
 }
 
 @media screen and (max-width:$mobile) {
-
-
-  .collapse {
-
-    background: rgba(0,0,0, 0.35);
-
-  }
-
-  /*button starts as transparent, and doesn't hold coherence as you toggle and untoggle
-   -- it's not what i had intended */
-
-  button.navbar-toggle {
-
-    background-color: #222 !important;
-
-
-  }
-
-  button.navbar-toggle.collapsed, button.navbar-toggle.collapsed.scrolled {
-
-    background-color: rgba(0,0,0, .2) !important;
-
-  }
-
-  /**endfix**/
-
-
-
-
-
-
-
-
-
-
+    .collapse {
+        background: rgba(0, 0, 0, 0.35);
+    }
+    button.navbar-toggle {
+        //    background-color: #222 !important; //navbar button toggle off for now
+    }
+    button.navbar-toggle.collapsed,
+    button.navbar-toggle.collapsed.scrolled {
+        background-color: rgba(0, 0, 0, .2) !important;
+    }
 }
-
-
