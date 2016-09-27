@@ -1,7 +1,7 @@
 header {
     
 position: relative;
-height: 60vh;
+height: 100vh;
 padding: 0;
 width: 100%;
 
@@ -12,11 +12,11 @@ width: 100%;
   height: 100%;
   background-image:
       url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=),
-      linear-gradient(rgba(31,178,75, 1), rgba(31,178,75,.5)),
-      url("../../assets/img/bg-gimp.png");
+      linear-gradient(rgba(31,178,75, 0.5), rgba(31,178,75,1)),
+      url("../../assets/img/bg-gimp2.png"); /*work out a better 3rd background */
       
-    background-attachment: fixed, fixed, fixed;
-//      
+    background-attachment: fixed, fixed, scroll;
+   
   background-size: 2px 2px, cover, cover;
 //  background-repeat: no-repeat, no-repeat, no-repeat;
 //  background-position: 50% 50%;
@@ -30,25 +30,22 @@ width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-  z-index: 2;
-
-  color: white;
-
-}
-
-@media screen and (max-width: $mobile) {
-
-  .intro-message {
-
-    h3 {
-
-      font-size: 150%;
-
+    text-align: center;
+    z-index: 2;
+    color: white;
+    
+    h1 {
+        
+        margin: 10%;
+        font-size: 180px;
+        
+    }
+    
+    
+    p {
+//        font-size: 32px;
+        
     }
 
-
-  }
-
-
 }
+

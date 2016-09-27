@@ -1,187 +1,135 @@
-
-
-
 .hovereffect {
-
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-  background: $overlay-color;
-
-  & .overlay {
     width: 100%;
     height: 100%;
-    position: absolute;
-    overflow:hidden;
-    top: 0;
-    left: 0;
-//    padding: 50px 20px;
-    padding: 20px 20px;
-    margin-bottom: 20px;
-
-
-  }
-
-  & img {
-
-    display: block;
-    position: relative;
-    max-width: none;
-    width: calc(100% + 20px);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-10px,0,0);
-    transform: translate3d(-10px,0,0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-
-  }
-
-  &:hover img {
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-
-  }
-
-  & h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
+    float: left;
     overflow: hidden;
-    padding: 0.5em 0;
-    background-color: rgba(255,255,255,0.1);
-
-
-  }
-
-  & h2:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    content: '';
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(-100%,0,0);
-    transform: translate3d(-100%,0,0);
-
-
-  }
-
-  &:hover h2:after {
-
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-
-  }
-
-  & a, & p {
-    
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(100%,0,0);
-    transform: translate3d(100%,0,0);
-  }
-
-  & p {
-      
-    color: #fff;
-    margin-top: 1vh;
-
-  }
-
-  & a {
-      
-    color: $portfolio-img-fa-icon-color;
-//    color: #ABB3ED;
-    margin-top: 1vh;
-    transition: font-size 0.35s, transform 0.35s;
-
-  }
-
-
-
-  &:hover a, &:hover p {
-
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    
-  }
-
-  a:hover {
-
-//    text-decoration: underline;
-    color: rgba(255,255,255, 1);
-    font-size: 1.25em;
-    transition: font-size 0.35s, transform 0.35s;
-
-
-
-
-  }
-
-
-
-
-
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: $overlay-color;
+    & .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        //    padding: 50px 20px;
+        padding: 20px 20px;
+        margin-bottom: 20px;
+    }
+    & img {
+        display: block;
+        position: relative;
+        max-width: none;
+        width: calc(100% + 20px);
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        }
+    &:hover img {
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    & h2 {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        font-size: 17px;
+        overflow: hidden;
+        padding: 0.5em 0;
+        background-color: rgba(255, 255, 255, 0.1);
+        //    margin-top: 0px; 
+    }
+    & h2:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        content: '';
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    &:hover h2:after {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    & a,
+    & p {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    & p {
+        color: #fff;
+        margin-top: 1vh;
+    }
+    & a {
+        color: $portfolio-img-fa-icon-color;
+        margin-top: 1vh;
+        transition: font-size 0.35s, transform 0.35s;
+    }
+    &:hover a,
+    &:hover p {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    a:hover {
+        //    text-decoration: underline;
+        color: rgba(255, 255, 255, 1);
+        font-size: 1.25em;
+        transition: font-size 0.35s, transform 0.35s;
+    }
 }
 
+@media screen and (min-width: $tablet) {}
 
+@media screen and (max-width:420px) {
 
-
-
-
-@media screen and (max-width: $tablet) {
-
-/*  .hovereffect > a {
-
-    display: none;
-
-  }
-
-  .mobile-link {
-
-    display: inline-block;
-
-  }*/
-
-
-
+    .overlay {
+        
+        h2 {
+        font-size: 12px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0
+        }
+        
+        &:hover h2 { 
+        transition: transform 0.35s;
+        transform: translate3d(150%, 0 ,0);
+            
+        }
+            
+        
+        
+    }
 }
 
 @media screen and (max-width: $mobile) {
-
-
-  /*reduce size of portfolio thumbnails so they fit better mobile view*/
-  .thumb {
-
-    text-align: center;
-    max-width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-
-
-  }
-
-
-
-
-
-
-
+    /*reduce size of portfolio thumbnails so they fit better mobile view*/
+    //  .thumb {
+    //
+    //    text-align: center;
+    //    max-width: 80%;
+    //    margin-left: 10%;
+    //    margin-right: 10%;
+    //
+    //
+    //  }
 }
