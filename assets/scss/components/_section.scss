@@ -3,134 +3,131 @@ section {
     padding-top: 2% !important;
     text-align: center;
     background: #fff;
-    
     .container {
-        
-//        padding: 100px;
-//      
-        
-        
+        //        padding: 100px;
+        //      
     }
-    
-   .page-header > h2 {
-    
-    padding-top: 60px;
-    margin-top: -40px;
-    
+    .page-header > h2 {
+        padding-top: 60px;
+        margin-top: -40px;
     }
-    
-
 }
 
-
-
 #portfolio {
-    
     padding-right: 20%;
     padding-left: 20%;
-    
     div[class*="col"] {
         padding-right: 0;
         padding-left: 0;
     }
-    
     padding-bottom: 60px;
 }
 
 #about {
-    
     width: 70%;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
-    
     .container-fluid {
-        
         padding: 20px 10%;
-
-        
+        .row {
+            
+            display: flex;
+            align-content: center;
+            align-items: center;
+            
+        }
+        .middle {
+            //              position: absolute;
+            //              top: 50%;
+            //              transform: translateY(50%);
+        }
     }
-    
-.vcenter {
-    
-    display: inline-block;
-    float: none;
-    vertical-align: middle;
-
-    }
-    
-
 }
 
 #contacts {
-    
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     height: 90vh;
-    
     form > * {
-        
         text-align: left;
         width: 100%;
         margin-bottom: 0.5em;
         padding: 5px;
         border: 0.1em solid $nav-bg-color-rgba;
         border-radius: 3px;
-        
-
     }
-   
     form > button {
-        
         height: 2em;
         text-align: center;
-        
-
     }
-    
     form {
-        
-//        display: inline-block;
-//        float: none;
-//        vertical-align: middle;
-        
-        
-        position: relative; 
-//        top: 25%; 
+        //        display: inline-block;
+        //        float: none;
+        //        vertical-align: middle;
+        position: relative;
+        //        top: 25%; 
         transform: translateY(25%);
-//        margin-bottom: 40vh;
+        //        margin-bottom: 40vh;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    
+    #about {
+        
+       
+        
+        .container-fluid .row {
+            
+            
+            display: table;
+//            color: red !important;
+            
+        }
+        
+        
+        img {
+                
+        
+            
+        }
+        
+        
         
     }
-    
-    
-    
     
 }
 
 @media screen and (max-width:$mobile) {
-
+    
+    #about {
+        
+        width: 100%;
+        
+    }
+    
+    #portfolio {
+        
+    padding-right: 2%;
+    padding-left: 2%;
+    //the images width overflow slightly off the section, this fixes it
+    overflow-x: hidden;
+        
+    }
+    
     
     
 }
 
 @media screen and (min-width:$mobile + 160) {
-    
     #contacts {
-        
         p {
-            
             font-size: 2em;
-            
         }
-        
         .container-fluid {
-            
             width: 50% !important;
         }
-        
     }
-    
-    
 }
-
