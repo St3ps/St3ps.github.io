@@ -14,13 +14,6 @@
 }
 
 
-/****/
-
-
-/*latest navbar changes*/
-
-
-/****/
 
 .navbar-default {
     background: rgba(0, 0, 0, .0);
@@ -32,18 +25,15 @@
         }
         &:active,
         &:focus {
-            color: #333;
+            //make sure color stays white even when you scroll down
+            color: #fff;
             background-color: transparent;
         }
     }
     .navbar-collapse {
         border: 0;
     }
-    /*when the collapse button is toggled force nav options to the right -- inactive for now*/
-    .navbar-collapse.collapse.in {
-        //   float: right !important;
-        //   display: inline-block;
-    }
+
 }
 
 .navbar-brand {
@@ -57,17 +47,17 @@
 }
 
 
-/****/
-
 .collapse,
 .navbar-header {
     background: $nav-bg-color;
 }
 
-.navbar,
+//.navbar,
+//.collapse,
+//.navbar-header {
 .navbar a,
-.collapse,
-.navbar-header {
+
+{
     -webkit-transition: all 0.16s ease-out;
     -moz-transition: all 0.16s ease-out;
     -o-transition: all 0.16s ease-out;
@@ -86,9 +76,7 @@
     .collapse {
         background: rgba(0, 0, 0, 0.35);
     }
-    button.navbar-toggle {
-        //    background-color: #222 !important; //navbar button toggle off for now
-    }
+
     button.navbar-toggle.collapsed,
     button.navbar-toggle.collapsed.scrolled {
         background-color: rgba(0, 0, 0, .2) !important;

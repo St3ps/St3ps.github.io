@@ -4,12 +4,21 @@ section {
     text-align: center;
     background: #fff;
     
+    .container {
+        
+//        padding: 100px;
+//      
+        
+        
+    }
+    
    .page-header > h2 {
     
     padding-top: 60px;
     margin-top: -40px;
     
-}
+    }
+    
 
 }
 
@@ -29,44 +38,101 @@ section {
 }
 
 #about {
-//    
-//    h2 {
-//        padding-top: 60px;
-//        margin-top: -40px;
-//    }
     
-    vertical-align: middle;
-    .row {
-        display: flex;
-        align-items: center;
-    }
-}
+    width: 70%;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+    
+    .container-fluid {
+        
+        padding: 20px 10%;
 
-@media screen and (max-width:$tablet) {
-    /*resume the about section into original properties -- otherwise the layout flow will be messy */
-    #about {
-        padding-right: 20%;
-        padding-left: 20%;
-        .row {
-            display: table;
-            align-items: inherit;
-        }
-    }
-}
-
-@media screen and (min-width:$tablet) {
-    section {
-        padding: 100px;
-        //border-radius: 1.5%;
         
     }
-    #portfolio {
-        //        padding: 10px;
-    }
-    /*    .container {
     
-        padding: 0 10%;
-            background: red;
-    }*/
+.vcenter {
+    
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    height: 40em;
+
+    
+    }
+    
+
+}
+
+#contacts {
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 90vh;
+    
+    form > * {
+        
+        text-align: left;
+        width: 100%;
+        margin-bottom: 0.5em;
+        padding: 5px;
+        border: 0.1em solid $nav-bg-color-rgba;
+        border-radius: 3px;
+        
+
+    }
+   
+    form > button {
+        
+        height: 2em;
+        text-align: center;
+        
+
+    }
+    
+    form {
+        
+//        display: inline-block;
+//        float: none;
+//        vertical-align: middle;
+        
+        
+        position: relative; 
+//        top: 25%; 
+        transform: translateY(25%);
+//        margin-bottom: 40vh;
+        
+    }
+    
+    
+    
+    
+}
+
+@media screen and (max-width:$mobile) {
+
+    
+    
+}
+
+@media screen and (min-width:$mobile + 160) {
+    
+    #contacts {
+        
+        p {
+            
+            font-size: 2em;
+            
+        }
+        
+        .container-fluid {
+            
+            width: 50% !important;
+        }
+        
+    }
+    
+    
 }
 

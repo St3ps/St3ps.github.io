@@ -1,6 +1,7 @@
 body {
   margin-top: 40px;
   /* scrollspy  adjustments*/
+  width: 100%;
   position: relative;
   background: rgba(31, 178, 75, 0.2); }
 
@@ -62,28 +63,42 @@ section {
     padding-left: 0; }
 
 #about {
-  vertical-align: middle; }
-  #about .row {
-    display: flex;
-    align-items: center; }
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  #about .container-fluid {
+    padding: 20px 10%; }
+  #about .vcenter {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    height: 40em; }
 
-@media screen and (max-width: 992px) {
-  /*resume the about section into original properties -- otherwise the layout flow will be messy */
-  #about {
-    padding-right: 20%;
-    padding-left: 20%; }
-    #about .row {
-      display: table;
-      align-items: inherit; } }
+#contacts {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 90vh; }
+  #contacts form > * {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.5em;
+    padding: 5px;
+    border: 0.1em solid rgba(178, 2, 1, 0.35);
+    border-radius: 3px; }
+  #contacts form > button {
+    height: 2em;
+    text-align: center; }
+  #contacts form {
+    position: relative;
+    transform: translateY(25%); }
 
-@media screen and (min-width: 992px) {
-  section {
-    padding: 100px; }
-  /*    .container {
-    
-        padding: 0 10%;
-            background: red;
-    }*/ }
+@media screen and (min-width: 580px) {
+  #contacts p {
+    font-size: 2em; }
+  #contacts .container-fluid {
+    width: 50% !important; } }
 
 .nav a {
   color: #FFF;
@@ -96,12 +111,8 @@ section {
 .navbar {
   border: 0; }
 
-/****/
-/*latest navbar changes*/
-/****/
 .navbar-default {
-  background: transparent;
-  /*when the collapse button is toggled force nav options to the right -- inactive for now*/ }
+  background: transparent; }
   .navbar-default .navbar-nav > li > a {
     color: #FFF; }
     .navbar-default .navbar-nav > li > a:hover {
@@ -109,7 +120,7 @@ section {
       color: #E80C0F; }
     .navbar-default .navbar-nav > li > a:active,
     .navbar-default .navbar-nav > li > a:focus {
-      color: #333;
+      color: #fff;
       background-color: transparent; }
   .navbar-default .navbar-collapse {
     border: 0; }
@@ -120,15 +131,11 @@ section {
 .active a {
   color: #B20201 !important; }
 
-/****/
 .collapse,
 .navbar-header {
   background: #B20201; }
 
-.navbar,
-.navbar a,
-.collapse,
-.navbar-header {
+.navbar a {
   -webkit-transition: all 0.16s ease-out;
   -moz-transition: all 0.16s ease-out;
   -o-transition: all 0.16s ease-out;
@@ -139,7 +146,7 @@ section {
 .scrolled .navbar-header {
   background: rgba(178, 2, 1, 0.35); }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 420px) {
   .collapse {
     background: rgba(0, 0, 0, 0.35); }
   button.navbar-toggle.collapsed,
@@ -153,43 +160,7 @@ section {
   overflow: hidden;
   position: relative;
   text-align: center;
-  cursor: default;
-  background: #1FB24B;
-  /*    & h2:after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        content: '';
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-    }
-    &:hover h2:after {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }*/
-  /*    & a,
-    & p {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-        -webkit-transform: translate3d(100%, 0, 0);
-        transform: translate3d(100%, 0, 0);
-    }
-    & p {
-        color: #fff;
-        margin-top: 1vh;
-    }
-    & a {
-        color: $portfolio-img-fa-icon-color;
-        margin-top: 1vh;
-        transition: font-size 0.35s, transform 0.35s;
-    }*/ }
+  cursor: default; }
   .hovereffect .overlay {
     width: 100%;
     min-height: 30%;
@@ -229,6 +200,7 @@ section {
   .hovereffect h2 {
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 200%, 0);
     transform: translate3d(0, 200%, 0); }
   .hovereffect p {
     text-transform: uppercase;
@@ -257,23 +229,23 @@ section {
     font-size: 1.25em;
     transition: font-size 0.35s, transform 0.35s; }
 
-@media screen and (max-width: 420px) {
-  .overlay {
-    /*        h2 {
-        font-size: 12px;
+/*    & h2:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        margin-left: 0;
-        margin-right: 0
-        }
-        
-        &:hover h2 { 
+        height: 2px;
+        background: #fff;
+        content: '';
+        -webkit-transition: -webkit-transform 0.35s;
         transition: transform 0.35s;
-        transform: translate3d(150%, 0 ,0);
-            
-        }*/ }
-    .overlay p {
-      display: none; } }
-
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    &:hover h2:after {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }*/
 /*personal picture*/
 .picture {
   border-radius: 50%;
@@ -289,48 +261,16 @@ section {
     max-width: 50%; } }
 
 footer {
-  padding-top: 3vh;
   background-color: #222;
-  color: #fff; }
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  height: 100%; }
   footer ul {
-    list-style: none;
-    padding-left: 0; }
-  footer .right-list {
-    display: flex;
-    flex-direction: column;
-    vertical-align: middle;
-    text-align: center; }
-    footer .right-list li {
-      margin: 2vh 1vh 1vh 1vh;
-      justify-content: center; }
-  footer h2 {
-    padding-bottom: 5%; }
+    list-style: none; }
+  footer li {
+    display: inline-block; }
   footer a {
     color: white; }
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  footer h2 {
-    padding-bottom: 10%; } }
-
-@media screen and (min-width: 1200px) {
-  footer {
-    /*    h2 {
-
-      padding-bottom: 5%;
-
-    }*/
-    /*        .right-list {
-            display: block;
-            text-align: left;
-            ul {
-                width: 300px;
-                li {
-                    display: inline-block;
-                    margin: 0;
-                }
-            }
-        }*/ }
-    footer .container {
-      margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */
