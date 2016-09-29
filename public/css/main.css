@@ -72,8 +72,7 @@ section {
   #about .vcenter {
     display: inline-block;
     float: none;
-    vertical-align: middle;
-    height: 40em; }
+    vertical-align: middle; }
 
 #contacts {
   margin-left: auto;
