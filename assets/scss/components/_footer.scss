@@ -1,31 +1,18 @@
 footer {
-
-
-    
     background-color: $footer-bg-color;
     color: #fff;
     text-align: left;
     width: 100%;
     height: 100%;
-    
     ul {
-        
         list-style: none;
-              
-        
     }
-    
     li {
-        
         display: inline-block;
-        
     }
-    
     a {
-        
         color: white;
     }
-
 }
 
 //@media screen and (max-width: $mobile) {

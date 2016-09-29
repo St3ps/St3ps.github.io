@@ -31,11 +31,9 @@ section {
     .container-fluid {
         padding: 20px 10%;
         .row {
-            
             display: flex;
             align-content: center;
             align-items: center;
-            
         }
         .middle {
             //              position: absolute;
@@ -74,51 +72,30 @@ section {
 }
 
 @media screen and (max-width:$tablet) {
-    
     #about {
-        
-       
-        
         .container-fluid .row {
-            
-            
             display: table;
-//            color: red !important;
-            
+            //            color: red !important;
         }
-        
-        
-        img {
-                
-        
-            
-        }
-        
-        
-        
+        img {}
     }
-    
 }
 
 @media screen and (max-width:$mobile) {
-    
     #about {
-        
         width: 100%;
-        
     }
-    
     #portfolio {
+        padding-right: 2%;
+        padding-left: 2%;
+        //the images width overflow slightly off the section, this fixes it
+        overflow-x: hidden;
+    }
+    #contacts {
         
-    padding-right: 2%;
-    padding-left: 2%;
-    //the images width overflow slightly off the section, this fixes it
-    overflow-x: hidden;
+        height: 110vh;
         
     }
-    
-    
-    
 }
 
 @media screen and (min-width:$mobile + 160) {

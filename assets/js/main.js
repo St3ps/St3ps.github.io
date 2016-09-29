@@ -10,13 +10,6 @@ $("ul.navbar-nav li").click(function() {
 
 
 
-//$('html, body').animate({
-//
-//    scrollTop: $(".portfolio").offset().top
-//
-//}, 1000);
-
-//
 $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
 

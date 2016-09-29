@@ -13,8 +13,6 @@
     border: 0;
 }
 
-
-
 .navbar-default {
     background: rgba(0, 0, 0, .0);
     .navbar-nav>li>a {
@@ -33,19 +31,15 @@
     .navbar-collapse {
         border: 0;
     }
-
 }
 
 .navbar-brand {
-    
     color: #fff !important;
-    
 }
 
 .active a {
     color: $nav-bg-color !important;
 }
-
 
 .collapse,
 .navbar-header {
@@ -56,7 +50,6 @@
 //.collapse,
 //.navbar-header {
 .navbar a,
-
 {
     -webkit-transition: all 0.16s ease-out;
     -moz-transition: all 0.16s ease-out;
@@ -76,7 +69,6 @@
     .collapse {
         background: rgba(0, 0, 0, 0.35);
     }
-
     button.navbar-toggle.collapsed,
     button.navbar-toggle.collapsed.scrolled {
         background-color: rgba(0, 0, 0, .2) !important;

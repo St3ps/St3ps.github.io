@@ -103,7 +103,9 @@ section {
   #portfolio {
     padding-right: 2%;
     padding-left: 2%;
-    overflow-x: hidden; } }
+    overflow-x: hidden; }
+  #contacts {
+    height: 110vh; } }
 
 @media screen and (min-width: 580px) {
   #contacts p {

@@ -1,31 +1,22 @@
 header {
-    
-position: relative;
-height: 100vh;
-padding: 0;
-width: 100%;
-
+    position: relative;
+    height: 100vh;
+    padding: 0;
+    width: 100%;
 }
 
 .img-container {
-
-  height: 100%;
-  background-image:
-      url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=),
-      linear-gradient(rgba(31,178,75, 0.5), rgba(31,178,75,1)),
-      url("../../assets/img/bg-gimp2.png"); /*work out a better 3rd background */
-      
+    height: 100%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=), linear-gradient(rgba(31, 178, 75, 0.5), rgba(31, 178, 75, 1)), url("../../assets/img/bg-gimp2.png");
+    /*work out a better 3rd background */
     background-attachment: fixed, fixed, scroll;
-   
-  background-size: 2px 2px, cover, cover;
-//  background-repeat: no-repeat, no-repeat, no-repeat;
-//  background-position: 50% 50%;
-//  z-index: 1;
-
+    background-size: 2px 2px, cover, cover;
+    //  background-repeat: no-repeat, no-repeat, no-repeat;
+    //  background-position: 50% 50%;
+    //  z-index: 1;
 }
 
 .intro-message {
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,27 +24,15 @@ width: 100%;
     text-align: center;
     z-index: 2;
     color: white;
-    
     h1 {
-        
         margin: 10%;
         font-size: 180px;
-        
     }
-    
     .style-lobster {
-        
         display: block;
         font-size: 30px;
-        
-        
     }
-    
-    
     p {
-//        font-size: 32px;
-        
+        //        font-size: 32px;
     }
-
 }
-

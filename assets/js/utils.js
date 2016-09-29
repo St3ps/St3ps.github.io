@@ -1,6 +1,3 @@
-/**
- * Created by Joel on 22/08/2016.
- */
 
 $(document).on('click', 'a[href*="#"]:not([href="#"])', function(e) {
 
