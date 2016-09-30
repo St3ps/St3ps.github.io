@@ -62,10 +62,6 @@ section {
     padding-right: 0;
     padding-left: 0; }
 
-#about .container-fluid .row {
-  position: relative;
-}
-
 #about {
   width: 70%;
   margin-left: auto;
@@ -73,15 +69,10 @@ section {
   text-align: center; }
   #about .container-fluid {
     padding: 20px 10%; }
-    #about .vcenter {
-    display: inline-block; }
-
-    @media screen and (min-width: 992px) {
-  #about .vcenter {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%); } }
+    #about .container-fluid .row {
+      display: flex;
+      align-content: center;
+      align-items: center; }
 
 #contacts {
   margin-left: auto;
