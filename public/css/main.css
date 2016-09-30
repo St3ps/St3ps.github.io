@@ -68,7 +68,7 @@ section {
   margin-right: auto;
   text-align: center; }
   #about .container-fluid {
-    padding: 20px 10%; }
+    padding: 0 20px 20px 10%; }
     #about .container-fluid .row {
       display: flex;
       align-content: center;
@@ -94,6 +94,8 @@ section {
     transform: translateY(25%); }
 
 @media screen and (max-width: 992px) {
+  #about .container-fluid {
+    padding: 20px 10%; }
   #about .container-fluid .row {
     display: table; } }
 

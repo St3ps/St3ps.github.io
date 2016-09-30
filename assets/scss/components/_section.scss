@@ -29,7 +29,8 @@ section {
     margin-right: auto;
     text-align: center;
     .container-fluid {
-        padding: 20px 10%;
+        padding: 0 20px 20px 10%;
+        
         .row {
             display: flex;
             align-content: center;
@@ -73,8 +74,10 @@ section {
 
 @media screen and (max-width:$tablet) {
     #about {
+        .container-fluid { padding: 20px 10%; }
         .container-fluid .row {
             display: table;
+            
             //            color: red !important;
         }
         img {}
