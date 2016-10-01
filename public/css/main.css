@@ -89,6 +89,8 @@ section {
   #contacts form > button {
     height: 2em;
     text-align: center; }
+    #contacts form > button:hover {
+      background: rgba(255, 192, 191, 0.35); }
   #contacts form {
     position: relative;
     transform: translateY(25%); }

@@ -60,6 +60,11 @@ section {
     form > button {
         height: 2em;
         text-align: center;
+        
+        &:hover {
+            
+            background: $nav-bg-color-rgba + 190;            
+        }
     }
     form {
         //        display: inline-block;
