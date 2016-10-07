@@ -1,15 +1,18 @@
 section {
     margin-top: 10%;
-    padding-top: 2% !important;
+//    padding-top: 2% !important;
+    border-top: 90px solid $body-bg-color; //the purpose of this border is so the scrollspy has a proper offset into the section -- it works for now
     text-align: center;
     background: #fff;
     .container {
         //        padding: 100px;
         //      
     }
-    .page-header > h2 {
-        padding-top: 60px;
-        margin-top: -40px;
+
+       .page-header > h2 {
+//        padding-top: 60px;
+//        margin-top: -25px; //h2 doesn't change. so this is a 'hacky' way of giving a vertical center, but it seems to just work. //turned off for now
+        
     }
 }
 
@@ -49,6 +52,7 @@ section {
     margin-right: auto;
     text-align: center;
     height: 90vh;
+    // watch out, the form layout WORKS but it breaks in a certain min height/width
     form > * {
         text-align: left;
         width: 100%;
