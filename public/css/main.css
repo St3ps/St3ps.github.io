@@ -3,6 +3,8 @@ body {
   /* scrollspy  adjustments*/
   width: 100%;
   position: relative;
+  margin-bottom: -10px;
+  /* removes odd gap between footer and bottom of page */
   background: rgba(31, 178, 75, 0.2); }
 
 i {
@@ -32,7 +34,7 @@ header {
 
 .intro-message {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -49,7 +51,10 @@ section {
   margin-top: 10%;
   border-top: 90px solid rgba(31, 178, 75, 0.2);
   text-align: center;
-  background: #fff; }
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%; }
 
 #portfolio {
   padding-right: 20%;
@@ -58,11 +63,13 @@ section {
   #portfolio div[class*="col"] {
     padding-right: 0;
     padding-left: 0; }
+  #portfolio p {
+    margin: 10px 0 20px 0; }
 
 #about {
-  width: 70%;
+  /* width: 70%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   text-align: center; }
   #about .container-fluid {
     padding: 0 20px 20px 10%; }
@@ -98,19 +105,18 @@ section {
   #about .container-fluid .row {
     display: table; } }
 @media screen and (max-width: 420px) {
-  #about {
-    width: 100%; }
-
+  /*     #about {
+          width: 100%;
+      } */
   #portfolio {
     padding-right: 2%;
     padding-left: 2%;
     overflow-x: hidden; }
 
   #contacts {
-    height: 110vh; } }
+    height: 120vh;
+    margin-bottom: 5px; } }
 @media screen and (min-width: 580px) {
-  #contacts p {
-    font-size: 2em; }
   #contacts .container-fluid {
     width: 50% !important; } }
 .nav a {
@@ -242,7 +248,7 @@ section {
 .picture {
   border-radius: 50%;
   margin: 10px 10px 10px 10px;
-  max-width: 60%;
+  max-width: 40%;
   height: auto;
   width: auto\9;
   /* ie8 */ }
@@ -251,6 +257,9 @@ section {
   .picture {
     margin: 40px 10px 40px 10px;
     max-width: 50%; } }
+@media screen and (max-width: 420px) {
+  .picture {
+    display: none; } }
 footer {
   background-color: #222;
   color: #fff;

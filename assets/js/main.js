@@ -21,6 +21,29 @@ $('a[href^="#"]').on('click', function(event) {
     }
 });
 
+//comparefunction
+function spaceElements(elem1, elem2) {
+
+
+  
+  var e1 = $(elem1).offset().top;
+  var e2 = $(elem2).offset().top;
+  
+  var e1TotalHeight = e1 + $(elem1).height();
+    console.log(e1TotalHeight, e2);
+
+  if(e2 < e1TotalHeight ) {
+    
+    var margin = e1TotalHeight - e2;
+    // var e1Top = parseInt($(elem1).css('top'), 10);
+    console.log("overlap")
+    $(elem2).css( 'margin-top', margin + 10 + "px");
+  }
+  
+                
+}
+
+spaceElements($('#contacts form'),$('footer'));
 
 
 function checkScroll(){

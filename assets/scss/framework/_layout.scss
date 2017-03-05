@@ -8,7 +8,7 @@ body {
     margin-top: 40px; /* scrollspy  adjustments*/
     width: 100%;
     position: relative;
-    
+    margin-bottom: -10px; /* removes odd gap between footer and bottom of page */
     background: $body-bg-color;
     
 }
