@@ -29,15 +29,12 @@ section {
     padding-bottom: 60px;
 
     p {
-            margin: 10px 0 20px 0;
+            padding: 30px;
 
     }
 }
 
 #about {
-    /* width: 70%;
-    margin-left: auto;
-    margin-right: auto; */
 
     text-align: center;
     .container-fluid {
@@ -48,11 +45,7 @@ section {
             align-content: center;
             align-items: center;
         }
-        .middle {
-            //              position: absolute;
-            //              top: 50%;
-            //              transform: translateY(50%);
-        }
+
     }
 }
 
@@ -60,7 +53,8 @@ section {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    height: 90vh;
+    padding-bottom: 15px;
+    // height: 70vh;
     // watch out, the form layout WORKS but it breaks in a certain min height/width
     form > * {
         text-align: left;
@@ -79,33 +73,23 @@ section {
             background: $nav-bg-color-rgba + 190;            
         }
     }
-    form {
-        //        display: inline-block;
-        //        float: none;
-        //        vertical-align: middle;
-        position: relative;
-        //        top: 25%; 
-        transform: translateY(25%);
-        //        margin-bottom: 40vh;
-    }
+
 }
+
 
 @media screen and (max-width:$tablet) {
     #about {
         .container-fluid { padding: 20px 10%; }
         .container-fluid .row {
             display: table;
-            
-            //            color: red !important;
+
         }
-        img {}
+
     }
 }
 
 @media screen and (max-width:$mobile) {
-/*     #about {
-        width: 100%;
-    } */
+
     #portfolio {
         padding-right: 2%;
         padding-left: 2%;
@@ -114,17 +98,15 @@ section {
     }
     #contacts {
         
-        height: 120vh;
-        margin-bottom: 5px;
+        // height: 105vh;
+        
         
     }
 }
 
 @media screen and (min-width:$mobile + 160) {
     #contacts {
-        p {
-            // font-size: 2em;
-        }
+
         .container-fluid {
             width: 50% !important;
         }

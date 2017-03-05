@@ -21,7 +21,7 @@ $('a[href^="#"]').on('click', function(event) {
     }
 });
 
-//comparefunction
+//function that would solve overlapping issues but for the moment is not being used
 function spaceElements(elem1, elem2) {
 
 
@@ -42,8 +42,6 @@ function spaceElements(elem1, elem2) {
   
                 
 }
-
-spaceElements($('#contacts form'),$('footer'));
 
 
 function checkScroll(){
