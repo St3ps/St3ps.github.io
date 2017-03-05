@@ -93,6 +93,9 @@ section {
     #contacts form > button:hover {
       background: rgba(255, 192, 191, 0.35); }
 
+#portfolio p, #contacts p {
+  padding: 30px; }
+
 @media screen and (max-width: 992px) {
   #about .container-fluid {
     padding: 20px 10%; }
